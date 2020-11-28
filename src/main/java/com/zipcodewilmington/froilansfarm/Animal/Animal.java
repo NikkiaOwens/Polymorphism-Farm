@@ -1,4 +1,7 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.Animal;
+
+import com.zipcodewilmington.froilansfarm.Eater;
+import com.zipcodewilmington.froilansfarm.NoiseMaker;
 
 public class Animal implements Eater, NoiseMaker {
     public void eat() {
