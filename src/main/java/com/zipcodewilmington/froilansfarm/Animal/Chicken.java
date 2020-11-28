@@ -16,8 +16,4 @@ public class Chicken extends Animal implements Produce {
         Edible egg = new Egg();
         return egg;
     }
-
-    public void hasBeenFertilized() {
-        //boolean
-    }
 }
