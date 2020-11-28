@@ -1,6 +1,8 @@
 package com.zipcodewilmington.froilansfarm;
 
+import java.util.ArrayList;
+
 public class ChickenCoop {
-    //Chicken chicken;
+    ArrayList<Chicken> chickens = new ArrayList<Chicken>();
     //need to setup arrayList of chickens;
 }
