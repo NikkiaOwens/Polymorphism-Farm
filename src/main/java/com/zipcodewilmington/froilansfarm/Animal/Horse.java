@@ -1,4 +1,7 @@
-package com.zipcodewilmington.froilansfarm;
+package com.zipcodewilmington.froilansfarm.Animal;
+
+import com.zipcodewilmington.froilansfarm.Animal.Animal;
+import com.zipcodewilmington.froilansfarm.Rideable;
 
 public class Horse extends Animal implements Rideable {
     public void eat() {
