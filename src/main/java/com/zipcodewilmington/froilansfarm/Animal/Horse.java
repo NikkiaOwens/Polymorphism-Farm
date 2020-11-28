@@ -10,7 +10,6 @@ public class Horse extends Animal implements Rideable {
         for (int i = 0; i < 3; i++) {
         // ArrayList<EarCorn> corn = new ArrayList<>();
          //   EarCorn.corn.size()-1;
-
         }
     }
 

@@ -34,4 +34,14 @@ public class TestHorse {
      //   Assert.assertEquals(expectedCornAmount, actualCornAmount);
     }
 
+    @Test
+    public void beingRiddenTest(){
+        //given
+        Horse horse = new Horse();
+        //when
+        horse.setBeingRidden(true);
+        Boolean actual = horse.getBeingRidden();
+        //then
+        Assert.assertTrue(actual);
+    }
 }
