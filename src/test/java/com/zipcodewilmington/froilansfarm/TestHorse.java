@@ -5,6 +5,8 @@ import com.zipcodewilmington.froilansfarm.Animal.Horse;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 public class TestHorse {
     @Test
     public void makeNoiseTest(){
@@ -16,4 +18,20 @@ public class TestHorse {
         //then
         Assert.assertEquals(expectedNoise, actualNoise);
     }
+
+    @Test
+    public void eatTest(){
+        //given
+        Horse horse = new Horse();
+        ArrayList<EarCorn> cornArray = new ArrayList<EarCorn>();
+        EarCorn corn = new EarCorn();
+        int expectedCornAmount = 0;
+        //when
+        cornArray.add(corn);
+        horse.eat();
+        //int actualCornAmount = EarCorn.size();
+        //then
+     //   Assert.assertEquals(expectedCornAmount, actualCornAmount);
+    }
+
 }
