@@ -1,4 +1,4 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Animal {
+public class Animal implements Eater, NoiseMaker {
 }
