@@ -1,7 +1,12 @@
 package com.zipcodewilmington.froilansfarm;
 
 public class Egg implements Edible {
-    public void hasBeenFertilized() {
-        //boolean
+    Boolean isFertilized = false;
+
+    public Egg() {
+    }
+
+    public Boolean hasBeenFertilized() {
+        return isFertilized;
     }
 }
