@@ -1,21 +1,21 @@
 package com.zipcodewilmington.froilansfarm;
 
-import java.lang.reflect.Field;
+
+import com.sun.deploy.net.MessageHeader;
+
+import java.security.PermissionCollection;
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Farm {
     //Need to setup arrayLists for farmHouse, chickenCoop, and Stable depending on how many are required
-    Farmhouse farmhouse = new Farmhouse();
-    ArrayList<Stable> stables = new ArrayList<Stable>();
-    ArrayList<ChickenCoop> chickenCoops = new ArrayList<ChickenCoop>();
-    //Farm also needs 1 field containing 5 cropRow
-    Field field;
-    //Need the farmVehicles
-    CropDuster cropDuster;
-    Tractor tractor;
-    //need farmer and pilot
-    Farmer farmer;
-    Pilot pilot;
+
+    private Farmhouse farmhouse = new Farmhouse();
+    private ArrayList<Stable> stables = new ArrayList<Stable>();
+    private ArrayList<ChickenCoop> chickenCoops = new ArrayList<ChickenCoop>();
+    private Field field = new Field();
+    private ArrayList<Vehicle> garage = new ArrayList<Vehicle>();
+
 
     public ArrayList<Stable> getStables(){
         return stables;
@@ -35,5 +35,17 @@ public class Farm {
     }
     public void setField(){
         this.field = field;
+    }
+
+    public Collection<ChickenCoop> getChickenCoops() {
+        return chickenCoops();
+    }
+
+    public ArrayList<Vehicle> getGarage() {
+        return garage;
+    }
+
+    public ArrayList<Farmer> getFarmhouse() {
+        return farmhouse;
     }
 }
