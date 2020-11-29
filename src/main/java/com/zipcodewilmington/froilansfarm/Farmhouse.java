@@ -3,12 +3,12 @@ package com.zipcodewilmington.froilansfarm;
 import java.util.ArrayList;
 
 public class Farmhouse {
-    private ArrayList<Person> farmhouse = new ArrayList<Person>();
+    private ArrayList<Person> farmhouse;
     Farmer farmer;
     Pilot pilot;
 
     public Farmhouse(){
-
+        farmhouse = new ArrayList<Person>();
     }
 
     public ArrayList<Person> getPeople(){

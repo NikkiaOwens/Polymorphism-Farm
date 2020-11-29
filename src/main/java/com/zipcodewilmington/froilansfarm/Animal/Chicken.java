@@ -4,10 +4,11 @@ import com.zipcodewilmington.froilansfarm.Edible;
 import com.zipcodewilmington.froilansfarm.Egg;
 import com.zipcodewilmington.froilansfarm.Produce;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Chicken extends Animal implements Produce {
-    private List<Egg> laidEggs;
+    private List<Egg> laidEggs = new ArrayList<Egg>();
 
     public String eat(Edible earCorn) {
         for (int i = 0; i < 3; i++) {

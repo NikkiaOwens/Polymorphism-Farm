@@ -10,8 +10,8 @@ import java.util.ArrayList;
 
 public class Friday {
     Farm froilansFarm = new Farm();
-    Farmer froilan = new Farmer();
-    Farmer froilanda = new Farmer();
+    Farmer froilan = new Farmer("Froilan");
+    Farmer froilanda = new Farmer("Froilanda");
     @Before
     public void setup(){
         froilansFarm.getFarmhouse().getPeople().add(froilan);
@@ -94,7 +94,7 @@ public class Friday {
 //        Vehicle vehicle = new Vehicle();
 //
 //        String expected = "Vroom vroom";
-//        String actual = Vehicle.makeNoise();
+//        String actual = vehicle.makeNoise();
 //
 //    }
 }

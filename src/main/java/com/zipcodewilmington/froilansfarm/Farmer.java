@@ -33,6 +33,6 @@ public class Farmer extends Person implements Rider, Botanist, Pilot{
     }
 
     public String eat(Edible food) {
-        return null;
+        return String.format("I ate %s", food.getClass().getSimpleName());
     }
 }
