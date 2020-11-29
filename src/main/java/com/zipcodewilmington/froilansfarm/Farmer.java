@@ -1,24 +1,38 @@
 package com.zipcodewilmington.froilansfarm;
 
 public class Farmer extends Person implements Rider, Botanist, Pilot{
-    public void plant() {
+    private String name;
+    // these methods implemented or make this class abstract
+    public Farmer(String name){
+        this.name = name;
+    }
+
+    public Farmer(){
 
     }
 
-    public void eat() {
+    public void plant(Crop crop, CropRow row) {
 
     }
 
-    public String makeNoise() {
-        return null;
+    public void mount(Rideable ride) {
+        if((!this.name.equals("Froilanda")) && ride instanceof CropDuster){
+            System.out.println("You don't have a pilot's license!");
+        }
+        else {
+            ride.setIsRidden(true);
+        }
     }
 
-    public void mount() {
+    public void dismount(Rideable ride) {
 
     }
 
-    public void dismount() {
-
+    public String makeNoise(){
+        return "Good day on the farm.";
     }
-    //abstract?
+
+    public String eat(Edible food) {
+        return String.format("I ate %s", food.getClass().getSimpleName());
+    }
 }

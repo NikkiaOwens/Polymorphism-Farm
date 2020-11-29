@@ -1,39 +1,73 @@
 package com.zipcodewilmington.froilansfarm;
 
-import java.lang.reflect.Field;
+
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Farm {
-    //Need to setup arrayLists for farmHouse, chickenCoop, and Stable depending on how many are required
-    Farmhouse farmhouse = new Farmhouse();
-    ArrayList<Stable> stables = new ArrayList<Stable>();
-    ArrayList<ChickenCoop> chickenCoops = new ArrayList<ChickenCoop>();
-    //Farm also needs 1 field containing 5 cropRow
-    Field field;
-    //Need the farmVehicles
-    CropDuster cropDuster;
-    Tractor tractor;
-    //need farmer and pilot
-    Farmer farmer;
-    Pilot pilot;
+
+    private Farmhouse farmhouse = new Farmhouse();
+    private ArrayList<Stable> stables = new ArrayList<Stable>();
+    private ArrayList<ChickenCoop> chickenCoops = new ArrayList<ChickenCoop>();
+    private Field field = new Field();
+    private ArrayList<Vehicle> garage = new ArrayList<Vehicle>();
+
 
     public ArrayList<Stable> getStables(){
         return stables;
     }
-    public ArrayList<ChickenCoop> chickenCoops(){
-        return chickenCoops;
+
+    public Farm(){
+
     }
 
     public Field getField(){
         return field;
     }
-    public void setStables(){
-        this.stables = stables;
+
+//    public void setStables(){
+//        this.stables = stables;
+//    }
+
+    public int getNumStables(){
+        return stables.size();
     }
-    public void setChickenCoops(){
-        this.chickenCoops = chickenCoops;
+
+    public void setNumStables(Integer numStables){
+        Stable stable = new Stable();
+        for(int i = 0; i < numStables; i++){
+            stables.add(stable);
+        }
     }
-    public void setField(){
-        this.field = field;
+
+//    public void setChickenCoops(){
+//        this.chickenCoops = chickenCoops;
+//    }
+
+    public int getNumChickenCoops(){
+        return chickenCoops.size();
+    }
+
+//    public void setNumChickenCoops(Integer numChickenCoops){
+//        ChickenCoop chickenCoop = new ChickenCoop();
+//        for (int i = 0; i < numChickenCoops; i++){
+//            chickenCoops.add(chickenCoop);
+//        }
+//    }
+
+//    public void setField(){
+//        this.field = field;
+//    }
+
+    public ArrayList<ChickenCoop> getChickenCoops() {
+        return chickenCoops;
+    }
+
+    public ArrayList<Vehicle> getGarage() {
+        return garage;
+    }
+
+    public Farmhouse getFarmhouse() {
+        return farmhouse;
     }
 }

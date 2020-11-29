@@ -39,7 +39,7 @@ public class TestHorse {
         //given
         Horse horse = new Horse();
         //when
-        horse.setBeingRidden(true);
+        horse.setIsRidden(true);
         Boolean actual = horse.getBeingRidden();
         //then
         Assert.assertTrue(actual);
