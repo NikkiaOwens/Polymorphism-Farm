@@ -1,24 +1,26 @@
 package com.zipcodewilmington.froilansfarm;
 
 public class Farmer extends Person implements Rider, Botanist, Pilot{
-    public void plant() {
+
+    // these methods implemented or make this class abstract
+    public void plant(Crop crop, CropRow row) {
 
     }
 
-    public void eat() {
+    public void mount(Rideable ride) {
 
     }
+
+    public void dismount(Rideable ride) {
+
+    }
+
 
     public String makeNoise() {
         return null;
     }
 
-    public void mount() {
-
+    public String eat(Edible food) {
+        return null;
     }
-
-    public void dismount() {
-
-    }
-    //abstract?
 }
