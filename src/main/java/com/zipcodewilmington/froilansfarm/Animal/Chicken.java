@@ -5,12 +5,13 @@ import com.zipcodewilmington.froilansfarm.Egg;
 import com.zipcodewilmington.froilansfarm.Produce;
 
 public class Chicken extends Animal implements Produce {
-    public void eat(Edible earCorn) {
+    public String eat(Edible earCorn) {
         for (int i = 0; i < 3; i++) {
             // ArrayList<EarCorn> corn = new ArrayList<>();
             //   EarCorn.corn.size()-1;
 
         }
+        return "Chicken is fed.";
     }
 
     public String makeNoise() {
