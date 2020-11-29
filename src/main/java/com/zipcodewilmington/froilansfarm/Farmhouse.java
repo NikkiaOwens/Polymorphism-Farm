@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Farmhouse {
     //Need to set up arrayList of Person(and one of farmer and pilot individually as well?)
-    ArrayList<Person> farmhouse = new ArrayList<Person>();
+    private ArrayList<Person> farmhouse = new ArrayList<Person>();
     Farmer farmer;
     Pilot pilot;
 
@@ -12,6 +12,9 @@ public class Farmhouse {
 
     }
 
+    public ArrayList<Person> getPeople(){
+        return farmhouse;
+    }
 
 
 

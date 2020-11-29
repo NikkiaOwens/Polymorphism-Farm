@@ -32,16 +32,16 @@ public class Sunday {
     Farmer froilanda = new Farmer();
     @Before
     public void setup(){
-        froilansFarm.getFarmhouse().add(froilan);
-        froilansFarm.getFarmhouse().add(froilanda);
+        froilansFarm.getFarmhouse().getPeople().add(froilan);
+        froilansFarm.getFarmhouse().getPeople().add(froilanda);
 
         //fill field
         ArrayList<CropRow> cropRows = froilansFarm.getField().getRowsOfCrops();
         for (int i = 0; i < 5; i++) {
             if (i == 0) {
-                cropRows.add(new CropRow<CornStalk>());
+                cropRows.add(new CropRow());
             } else {
-                cropRows.add(new CropRow<TomatoPlant>());
+                cropRows.add(new CropRow());
                 // we'll just make the "arbitrary vegetation" tomato plants
             }
         }
