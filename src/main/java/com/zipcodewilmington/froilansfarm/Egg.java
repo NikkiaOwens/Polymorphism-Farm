@@ -1,12 +1,26 @@
 package com.zipcodewilmington.froilansfarm;
 
 public class Egg implements Edible {
-    Boolean isFertilized = false;
+    private Boolean hasBeenEaten = false;
+    private Boolean isFertilized = false;
 
     public Egg() {
     }
 
     public Boolean hasBeenFertilized() {
+
         return isFertilized;
+    }
+
+    public boolean hasBeenEaten() {
+        return hasBeenEaten;
+    }
+
+    public void fertilize(){
+        isFertilized = true;
+    }
+
+    public void beEaten(){
+        hasBeenEaten = true;
     }
 }
