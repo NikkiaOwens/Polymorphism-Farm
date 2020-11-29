@@ -1,17 +1,25 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class CropDuster extends FarmVehicle implements Aircraft{
-    public CropDuster(){
+import java.util.ArrayList;
+import java.util.List;
 
+public class CropDuster extends FarmVehicle implements Aircraft{
+
+    public CropDuster(){
     }
 
-
-//    public CropRow<Crop> fertilize(CropRow row){
-//        //sets the all Crops in the Row flag "hasBeenFertilizer" boolean to true
-//        //returns list or array of crops that has been fertilized
-//    }
+    public void fertilize(CropRow row){
+        ArrayList<Crop> cropList = row.getCrops();
+        for(Crop c: cropList) {
+            c.setHasBeenFertilized(true);
+        }
+    }
 
     public String fly() {
-        return "This vehicle can fly, what is the point of this useless interface...";
+        return "I believe I can fly!";
+    }
+
+    public String makeNoise(){
+        return "pewwwww";
     }
 }

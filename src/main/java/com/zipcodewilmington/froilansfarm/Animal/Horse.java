@@ -22,7 +22,11 @@ public class Horse extends Animal implements Rideable {
         return isBeingRidden;
     }
 
-    public void setBeingRidden(Boolean beingRidden) {
-        isBeingRidden = beingRidden;
+//    public void setBeingRidden(Boolean beingRidden) {
+//        isBeingRidden = beingRidden;
+//    } see below from interface
+
+    public void setIsRidden(boolean ridden) {
+        this.isBeingRidden = ridden;
     }
 }
