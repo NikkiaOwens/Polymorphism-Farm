@@ -3,7 +3,6 @@ package com.zipcodewilmington.froilansfarm;
 import java.util.ArrayList;
 
 public class Farmhouse {
-    //Need to set up arrayList of Person(and one of farmer and pilot individually as well?)
     private ArrayList<Person> farmhouse = new ArrayList<Person>();
     Farmer farmer;
     Pilot pilot;
@@ -24,8 +23,8 @@ public class Farmhouse {
         return this.pilot;
     }
 
-    public void setFarmer(){
-        this.farmer = new Farmer();
+    public void setFarmer(Farmer farmer){
+        this.farmer = farmer;
     }
 
     //pilot is abstract so it cannot be instantiated
