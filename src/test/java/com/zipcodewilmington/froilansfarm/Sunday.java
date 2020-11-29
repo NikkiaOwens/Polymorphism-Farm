@@ -28,8 +28,8 @@ public class Sunday {
      * His sister, Froilanda, is a Pilot who uses a CropDuster.
      */
     Farm froilansFarm = new Farm();
-    Farmer froilan = new Farmer();
-    Farmer froilanda = new Farmer();
+    Farmer froilan = new Farmer("Froilan");
+    Farmer froilanda = new Farmer("Froilanda");
     @Before
     public void setup(){
         froilansFarm.getFarmhouse().getPeople().add(froilan);
