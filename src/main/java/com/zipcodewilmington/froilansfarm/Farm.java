@@ -16,16 +16,18 @@ public class Farm {
     public ArrayList<Stable> getStables(){
         return stables;
     }
-    public ArrayList<ChickenCoop> chickenCoops(){
-        return chickenCoops;
+
+    public Farm(){
+
     }
 
     public Field getField(){
         return field;
     }
-    public void setStables(){
-        this.stables = stables;
-    }
+
+//    public void setStables(){
+//        this.stables = stables;
+//    }
 
     public int getNumStables(){
         return stables.size();
@@ -38,27 +40,27 @@ public class Farm {
         }
     }
 
-    public void setChickenCoops(){
-        this.chickenCoops = chickenCoops;
-    }
+//    public void setChickenCoops(){
+//        this.chickenCoops = chickenCoops;
+//    }
 
     public int getNumChickenCoops(){
         return chickenCoops.size();
     }
 
-    public void setNumChickenCoops(Integer numChickenCoops){
-        ChickenCoop chickenCoop = new ChickenCoop();
-        for (int i = 0; i < numChickenCoops; i++){
-            chickenCoops.add(chickenCoop);
-        }
-    }
+//    public void setNumChickenCoops(Integer numChickenCoops){
+//        ChickenCoop chickenCoop = new ChickenCoop();
+//        for (int i = 0; i < numChickenCoops; i++){
+//            chickenCoops.add(chickenCoop);
+//        }
+//    }
 
-    public void setField(){
-        this.field = field;
-    }
+//    public void setField(){
+//        this.field = field;
+//    }
 
-    public Collection<ChickenCoop> getChickenCoops() {
-        return chickenCoops();
+    public ArrayList<ChickenCoop> getChickenCoops() {
+        return chickenCoops;
     }
 
     public ArrayList<Vehicle> getGarage() {

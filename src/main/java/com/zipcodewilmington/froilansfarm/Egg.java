@@ -12,15 +12,15 @@ public class Egg implements Edible {
         return isFertilized;
     }
 
-    public boolean hasBeenEaten() {
-        return hasBeenEaten;
-    }
+//    public boolean hasBeenEaten() {
+//        return hasBeenEaten;
+//    }
 
-    public void fertilize(){
-        isFertilized = true;
-    }
+//    public void fertilize(){
+//        isFertilized = true;
+//    }
 
-    public void beEaten(){
-        hasBeenEaten = true;
-    }
+//    public void beEaten(){
+//        hasBeenEaten = true;
+//    }
 }
