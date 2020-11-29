@@ -31,21 +31,23 @@ public class Wednesday {
         Farmer farmer = (Farmer) farmhouse.getPeople().get(0);
         List<ChickenCoop> chickenCoops = farm.chickenCoops();
 
-        // when
         for (ChickenCoop chickenCoop : chickenCoops) {
             for (Chicken chicken : chickenCoop.getChickens()) {
                 for (Egg egg : chicken.getLaidEggs()) {
                     if (!egg.hasBeenFertilized()) {
-                        farmer.eat(egg);
+
+        // when
+                        farmer.eat(egg);  //eat() must tell set egg to hasBeenEaten: true;
                     }
                 }
             }
         }
-        //then
+
         for (ChickenCoop chickenCoop : chickenCoops) {
             for (Chicken chicken : chickenCoop.getChickens()) {
                 for (Egg egg : chicken.getLaidEggs()) {
                     if (!egg.hasBeenFertilized() && !egg.hasBeenEaten()) {
+        //then
                         Assert.fail("Not all edible eggs have been eaten.");
                     }
                 }
