@@ -1,4 +1,5 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Chicken extends Animal {
+public interface Aircraft {
+    String fly();
 }
