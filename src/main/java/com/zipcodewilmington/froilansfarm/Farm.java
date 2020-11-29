@@ -45,7 +45,7 @@ public class Farm {
         return garage;
     }
 
-    public ArrayList<Farmer> getFarmhouse() {
+    public Farmhouse getFarmhouse() {
         return farmhouse;
     }
 }

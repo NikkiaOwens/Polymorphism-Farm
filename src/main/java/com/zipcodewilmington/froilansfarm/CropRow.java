@@ -2,10 +2,10 @@ package com.zipcodewilmington.froilansfarm;
 
 import java.util.ArrayList;
 
-public class CropRow<T extends Crop> {
-    ArrayList<T> crops;
+public class CropRow {
+    ArrayList<Crop> crops;
 
-    public ArrayList<T> getCrops(){
+    public ArrayList<Crop> getCrops(){
         return crops;
     }
 }
