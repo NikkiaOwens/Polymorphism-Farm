@@ -51,7 +51,6 @@ public class Tuesday {
         //given
         froilan.mount(johnnyDeer);
         boolean tractorOperated = johnnyDeer.getBeingRidden();
-        ArrayList<Crop> harvestedCrops = new ArrayList<Crop>();
         //when
         do { //harvest all Tomato
             johnnyDeer.harvest(froilansFarm.getField(), "Tomato", tractorOperated);
