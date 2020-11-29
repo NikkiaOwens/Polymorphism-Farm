@@ -16,4 +16,21 @@ public class ChickenCoop {
     public Collection<Chicken> getChickens() {
         return chickens;
     }
+
+    public Integer getChickensSize(){
+        return this.chickens.size();
+    }
+
+    public void addChicken(Integer numChickens){
+        Chicken chicken = new Chicken();
+        for (int i = 0; i <= numChickens; i++){
+            chickens.add(chicken);
+        }
+    }
+
+    public void deleteChicken(Integer chickensToDelete){
+        for (int i = 0; i <= chickensToDelete; i++){
+            chickens.remove(chickens.size()-1);
+        }
+    }
 }

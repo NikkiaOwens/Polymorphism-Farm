@@ -1,14 +1,10 @@
 package com.zipcodewilmington.froilansfarm;
 
 
-import com.sun.deploy.net.MessageHeader;
-
-import java.security.PermissionCollection;
 import java.util.ArrayList;
 import java.util.Collection;
 
 public class Farm {
-    //Need to setup arrayLists for farmHouse, chickenCoop, and Stable depending on how many are required
 
     private Farmhouse farmhouse = new Farmhouse();
     private ArrayList<Stable> stables = new ArrayList<Stable>();
@@ -30,9 +26,33 @@ public class Farm {
     public void setStables(){
         this.stables = stables;
     }
+
+    public int getNumStables(){
+        return stables.size();
+    }
+
+    public void setNumStables(Integer numStables){
+        Stable stable = new Stable();
+        for(int i = 0; i < numStables; i++){
+            stables.add(stable);
+        }
+    }
+
     public void setChickenCoops(){
         this.chickenCoops = chickenCoops;
     }
+
+    public int getNumChickenCoops(){
+        return chickenCoops.size();
+    }
+
+    public void setNumChickenCoops(Integer numChickenCoops){
+        ChickenCoop chickenCoop = new ChickenCoop();
+        for (int i = 0; i < numChickenCoops; i++){
+            chickenCoops.add(chickenCoop);
+        }
+    }
+
     public void setField(){
         this.field = field;
     }

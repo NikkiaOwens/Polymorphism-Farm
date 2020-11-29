@@ -16,6 +16,23 @@ public class Farmhouse {
         return farmhouse;
     }
 
+    public Farmer getFarmer(){
+        return this.farmer;
+    }
+
+    public Pilot getPilot(){
+        return this.pilot;
+    }
+
+    public void setFarmer(){
+        this.farmer = new Farmer();
+    }
+
+    //pilot is abstract so it cannot be instantiated
+//    public void setPilot(){
+//        this.pilot = new Pilot();
+//    }
+
 
 
 }
