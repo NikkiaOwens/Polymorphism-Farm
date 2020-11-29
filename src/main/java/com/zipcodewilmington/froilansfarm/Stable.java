@@ -1,7 +1,10 @@
 package com.zipcodewilmington.froilansfarm;
 
+import com.zipcodewilmington.froilansfarm.Animal.Horse;
+
 import javax.xml.ws.Holder;
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class Stable {
     private ArrayList<Horse> horses = new ArrayList<Horse>();
@@ -13,4 +16,7 @@ public class Stable {
     }
 
 
+    public Collection<Horse> getHorses() {
+        return horses;
+    }
 }
