@@ -25,7 +25,7 @@ public class Farmer extends Person implements Rider, Botanist, Pilot{
     }
 
     public String makeNoise(){
-        return null;
+        return "Good day on the farm.";
     }
 
     public String eat(Edible food) {
