@@ -7,12 +7,16 @@ public class Farmer extends Person implements Rider, Botanist, Pilot{
         this.name = name;
     }
 
+    public Farmer(){
+
+    }
+
     public void plant(Crop crop, CropRow row) {
 
     }
 
     public void mount(Rideable ride) {
-        if(this.name.equals("Froilan") && ride instanceof CropDuster){
+        if((!this.name.equals("Froilanda")) && ride instanceof CropDuster){
             System.out.println("You don't have a pilot's license!");
         }
         else {

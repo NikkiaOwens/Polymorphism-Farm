@@ -9,9 +9,11 @@ public class CropDuster extends FarmVehicle implements Aircraft{
     }
 
     public void fertilize(CropRow row){
-        ArrayList<Crop> cropList = row.getCrops();
-        for(Crop c: cropList) {
-            c.setHasBeenFertilized(true);
+        if(super.getBeingRidden()) {
+            ArrayList<Crop> cropList = row.getCrops();
+            for (Crop c : cropList) {
+                c.setHasBeenFertilized(true);
+            }
         }
     }
 
