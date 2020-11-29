@@ -50,17 +50,16 @@ public class Tuesday {
     public void TuesdayRoutine(){
         //given
         froilan.mount(johnnyDeer);
-        boolean tractorOperated = johnnyDeer.getBeingRidden();
         //when
         do { //harvest all Tomato
-            johnnyDeer.harvest(froilansFarm.getField(), "Tomato", tractorOperated);
+            johnnyDeer.harvest(froilansFarm.getField(), "Tomato");
         }
-        while(johnnyDeer.harvest(froilansFarm.getField(), "Tomato", tractorOperated) != null);
+        while(johnnyDeer.harvest(froilansFarm.getField(), "Tomato") != null);
 
         do { //harvest all Earcorn
-            johnnyDeer.harvest(froilansFarm.getField(), "EarCorn", tractorOperated);
+            johnnyDeer.harvest(froilansFarm.getField(), "EarCorn");
         }
-        while(johnnyDeer.harvest(froilansFarm.getField(), "EarCorn", tractorOperated) != null);
+        while(johnnyDeer.harvest(froilansFarm.getField(), "EarCorn") != null);
         //then
         //checks that everything has been harvested (empty CropRows)
         for(CropRow cr: froilansFarm.getField().getRowsOfCrops()){

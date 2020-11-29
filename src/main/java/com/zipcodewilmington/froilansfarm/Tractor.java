@@ -10,8 +10,8 @@ public class Tractor extends FarmVehicle {
 
     }
 
-    public Edible harvest(Field field, String cropType, boolean mounted){
-        if(mounted) {
+    public Edible harvest(Field field, String cropType){
+        if(super.getBeingRidden()) {
             //check if crop exist in the row
             Integer[] coordinate = findLocation(field, cropType);
             Integer[] invalidCoordinate = {null, null};
